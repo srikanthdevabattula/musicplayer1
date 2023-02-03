@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f494686d55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="1stpage.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand navbar-dark container-fluid col-12"
+    >
+      <img
+        class="nav-bar-logo"
+        src="https://img.freepik.com/free-vector/music-logo-with-gradient-style_23-2147835728.jpg"
+      />
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto fav-section">
+          <li class="nav-item ml-5">
+            <a class="nav-link notify fav-section" href="#">Favourites</a>
+          </li>
+          <li class="nav-item nav-bar-notify mt-2 ml-5">
+            <a href="#"><i class="fa-solid fa-bell notify"></i></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2 rounded-pill search-bar"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="background-color: black; border-color: #c6aae6;"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 rounded-pill search"
+            type="submit"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <!-- <div class="btn-group profile">
+      <button type="button" class="btn profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="nav-bar-profile" src="https://t3.ftcdn.net/jpg/04/70/99/62/360_F_470996233_hDT38FwIxhcy9QveIkYSEnstLD0VuRQ5.jpg">
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <button class="dropdown-item search " type="button">My Account</button>
+        <button class="dropdown-item search " type="button">Downloads</button>
+        <button class="dropdown-item search " type="button">Settings</button>
+      </div>
+    </div> -->
+      <!-- <a style="width:7%" href="#"><img class="nav-bar-profile" src="https://t3.ftcdn.net/jpg/04/70/99/62/360_F_470996233_hDT38FwIxhcy9QveIkYSEnstLD0VuRQ5.jpg"></a> -->
+      <img
+        class="nav-bar-profile"
+        src="https://t3.ftcdn.net/jpg/04/70/99/62/360_F_470996233_hDT38FwIxhcy9QveIkYSEnstLD0VuRQ5.jpg"
+      />
+    </nav>
+    <main class="container-fluid left-part">
+      <div class="slides row">
+        <div class="col-3 top-three">
+          <img
+            class="top-three-img"
+            src="https://c.saavncdn.com/editorial/AlluArjunStyle_20220719052740.jpg"
+          />
+        </div>
+        <div class="col-3 top-three">
+          <img
+            class="top-three-img"
+            src="https://i.scdn.co/image/ab67706c0000da84fb2209d998d6f251c9122159"
+          />
+        </div>
+        <div class="col-3 top-three">
+          <img
+            class="top-three-img"
+            src="https://c.saavncdn.com/514/Bollywood-Hits-Top-10-Hindi-2019-20191108150612-500x500.jpg"
+          />
+        </div>
+      </div>
+
+      <div class="row latest-release mt-5">
+        <h1 class="col-12 latest-songs">Latest Release</h1>
+        <div class="col-6 songs">
+          <img
+            class="songs-img"
+            src="https://c.saavncdn.com/937/Fed-Up-English-2017-20210301235233-500x500.jpg"
+          />
+          <a href="#music-bar" class="song-name"
+            ><span>Fed Up <br /><span class="song-time">04:30</span></span>
+          </a>
+
+          <!-- dropdown-menu -->
+          <div id="dropdown">
+            <i class="fas fa-chevron-circle-down">
+              <div id="dropdown-menu" class="hide">
+                <div id="dropdown-list">
+                  <i class="fas fa-play"></i>
+                  &nbsp;
+                  <a href="#music-bar">Play Now</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Queue</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Favourites</a>
+                </div>
+                <hr />
+                <!-- <div id="dropdown-list">
+          <i class="fas fa-exclamation-circle"></i>
+          &nbsp;
+            <a href="#latest-release">Get Info</a>
+          </div> -->
+                <!-- dropdown-menuend -->
+              </div>
+            </i>
+          </div>
+        </div>
+        <div class="col-6 songs">
+          <img
+            class="songs-img"
+            src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+          />
+          <a href="#" class="song-name"
+            ><span>Run It <br /><span class="song-time">03:50</span></span>
+          </a>
+          <div id="dropdown">
+            <i class="fas fa-chevron-circle-down">
+              <div id="dropdown-menu" class="hide">
+                <div id="dropdown-list">
+                  <i class="fas fa-play"></i>
+                  &nbsp;
+                  <a href="#music-bar">Play Now</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Queue</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Favourites</a>
+                </div>
+                <hr />
+              </div>
+            </i>
+          </div>
+        </div>
+        <div class="col-6 songs">
+          <img
+            class="songs-img"
+            src="https://w0.peakpx.com/wallpaper/1020/617/HD-wallpaper-black-panther-marvel.jpg"
+          />
+          <a href="#" class="song-name"
+            ><span
+              >Respect My thorne <br /><span class="song-time"
+                >04:30</span
+              ></span
+            >
+          </a>
+          <div id="dropdown">
+            <i class="fas fa-chevron-circle-down">
+              <div id="dropdown-menu" class="hide">
+                <div id="dropdown-list">
+                  <i class="fas fa-play"></i>
+                  &nbsp;
+                  <a href="#music-bar">Play Now</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Queue</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Favourites</a>
+                </div>
+                <hr />
+              </div>
+            </i>
+          </div>
+        </div>
+        <div class="col-6 songs">
+          <img
+            class="songs-img"
+            src="https://cdn.musicbed.com/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto,w_400,h_400/v1554221278/production/albums/3898"
+          />
+          <a href="#" class="song-name">
+            <span
+              >Run For Your Life <br /><span class="song-time"
+                >04:30</span
+              ></span
+            >
+          </a>
+          <div id="dropdown">
+            <i class="fas fa-chevron-circle-down">
+              <div id="dropdown-menu" class="hide">
+                <div id="dropdown-list">
+                  <i class="fas fa-play"></i>
+                  &nbsp;
+                  <a href="#music-bar">Play Now</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Queue</a>
+                </div>
+                <hr />
+                <div id="dropdown-list">
+                  <i class="fas fa-plus"></i>
+                  &nbsp;
+                  <a href="#latest-release">Add to Favourites</a>
+                </div>
+                <hr />
+              </div>
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid popular-artists">
+        <h3>Popular Artists</h3>
+
+        <div class="artist-container row">
+          <div class="col-4 col-md-2 artist-image">
+            <a href="2ndpage.html"
+              ><img
+                class="artist-image-img"
+                src="https://c.saavncdn.com/674/Rockstar-Dsp-Birthday-Special-Hit-Songs-2019-Telugu-2019-20190731131327-500x500.jpg"
+            /></a>
+            <h4 class="name-font">DSP</h4>
+          </div>
+          <div class="col-4 col-md-2 artist-image">
+            <a href="2ndpage.html"
+              ><img
+                class="artist-image-img"
+                src="https://c.saavncdn.com/371/S-S-Thaman-Birthday-Special-Hit-Songs-2019-Telugu-2019-20191114104013-500x500.jpg"
+            /></a>
+            <h4 class="name-font">Thaman</h4>
+          </div>
+          <div class="col-4 col-md-2 artist-image">
+            <a href="2ndpage.html"
+              ><img
+                class="artist-image-img"
+                src="https://c.saavncdn.com/editorial/logo/BestofBieber_20210101103129.jpg"
+            /></a>
+            <h4 class="name-font">Justin Bieber</h4>
+          </div>
+          <div class="col-4 col-md-2 artist-image">
+            <a href="2ndpage.html"
+              ><img
+                class="artist-image-img"
+                src="https://i.scdn.co/image/ab67616d0000b2732cafcdd985630d72594ecc49"
+            /></a>
+            <h4 class="name-font">Billie Eilish</h4>
+          </div>
+          <div class="col-4 col-md-2 artist-image">
+            <a href="2ndpage.html"
+              ><img
+                class="artist-image-img"
+                src="https://i.scdn.co/image/ab67706f000000024a54a41a2760b74e1d68d100"
+            /></a>
+            <h4 class="name-font">Ariana Grande</h4>
+          </div>
+          <div class="col-4 col-md-2 artist-image">
+            <a href="2ndpage.html"
+              ><img
+                class="artist-image-img"
+                src="https://i.scdn.co/image/ab67706f000000020373b03502fba84b91dac8e8"
+            /></a>
+            <h4 class="name-font">Ed Sheeran</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid moods">
+        <div class="diff-moods row">
+          <div class="col-4 col-md-2 mood-image1">
+            <h3 class="mood-name">Love</h3>
+          </div>
+          <div class="col-4 col-md-2 mood-image2">
+            <h3 class="mood-name">Gym</h3>
+          </div>
+          <div class="col-4 col-md-2 mood-image3">
+            <h3 class="mood-name">Romantic</h3>
+          </div>
+          <div class="col-4 col-md-2 mood-image4">
+            <h3 class="mood-name">Motivation</h3>
+          </div>
+          <div class="col-4 col-md-2 mood-image5">
+            <h3 class="mood-name">Travel</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid latest-telugu">
+        <h3>Latest telugu</h3>
+
+        <div class="telugu-container row">
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://naasongs.to/wp-content/uploads/2022/11/Waltair-Veerayya-2022-Boss-Party.jpg"
+            />
+            <h4 class="name-font-songs">Boss Party</h4>
+            <h6>Jan 2023</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://a10.gaanacdn.com/images/albums/75/4871175/crop_480x480_1639157029_4871175.jpg"
+            />
+            <h4 class="name-font-songs">OoAntava</h4>
+            <h6>Feb 2022</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://www.cinejosh.com/newsimg/newsmainimg/gundellona-song-from-ori-devuda-released_b_1110220855.jpg"
+            />
+            <h4 class="name-font-songs">Gundellonaa</h4>
+            <h6>Mar 2022</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://naasongs.to/wp-content/uploads/2021/08/Manchi-Rojulochaie-Telugu-2021-So-So-Ga.jpg"
+            />
+            <h4 class="name-font-songs">So So Ga</h4>
+            <h6>Sep 2022</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://naasongs.com.co/wp-content/uploads/2022/11/Love-Today-2022.jpg"
+            />
+            <h4 class="name-font-songs">Pranam Pothunna</h4>
+            <h6>Dec 2022</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid latest-english">
+        <h3>Latest English</h3>
+
+        <div class="telugu-container row">
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://c.saavncdn.com/501/Infinity-Kannada-2021-20210325213431-500x500.jpg"
+            />
+            <h4 class="name-font-songs">Infinity</h4>
+            <h6>Jan 2023</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://c.saavncdn.com/902/Toxic-Hindi-2021-20210622003507-500x500.jpg"
+            />
+            <h4 class="name-font-songs">Toxic</h4>
+            <h6>Feb 2022</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTH3mc83iMOx02xzyCfNUFYnA3i5NdCKoTHKiJrNtIWc-slIAx4yfyPHoVUG3Lc8r3Rw&usqp=CAU"
+            />
+            <h4 class="name-font-songs">Baby</h4>
+            <h6>Mar 2022</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="https://i.pinimg.com/originals/1d/95/7d/1d957d3939183907702459e4bd59bf76.jpg"
+            />
+            <h4 class="name-font-songs">bad guy</h4>
+            <h6>Sep 2022</h6>
+          </div>
+          <div class="col-4 col-md-2 song-image">
+            <img
+              class="song-image-img"
+              src="data:image/jpeg;base64,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"
+            />
+            <h4 class="name-font-songs">34+35</h4>
+            <h6>Dec 2022</h6>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="right-part">
+      <div class="row">
+        <h3 class="queue-name">Queue</h3>
+        <div class="queue-list">
+          <form>
+            <select id="select1">
+              <option>Queue</option>
+              <option>Playlist</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">01</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+
+      <div class="queue-songs">
+        <span class="song-no">02</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">03</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">04</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">05</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">06</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">07</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">08</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">09</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">09</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">10</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">11</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">12</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">13</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+      <div class="queue-songs">
+        <span class="song-no">14</span
+        ><img
+          class="queue-songs-img"
+          src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+        />
+        <a href="#" class="song-name"
+          ><span>Run It <br /><span class="song-time">03:50</span></span> </a
+        ><i class="heart fa-regular fa-heart"></i>
+      </div>
+    </aside>
+    <footer>
+      <!--The bottom music bar which pops up when we play a music-->
+      <div id="music-bar">
+        <!--Music Icon-->
+        <div id="music-icon">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/3/3a/Run_It_DJ_Snake.png"
+            alt="music-icon"
+          />
+        </div>
+        <!--End of music icon-->
+        <!--Music title-->
+        <div id="music-title">
+          <b>Run It</b>
+          <div id="favourite">
+            <i class="far fa-heart"></i>
+          </div>
+          <div id="remove">
+            <i class="fas fa-ban"></i>
+          </div>
+          <br />
+          <artist>shang chi</artist>
+        </div>
+        <!--End of music title-->
+        <!--Play buttons-->
+        <div id="play-buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-pause-circle"></i>
+          <i class="fas fa-forward"></i>
+          <i class="fas fa-undo-alt"></i>
+        </div>
+        <!--End of play buttons-->
+        <!--Music start time-->
+        <div id="start-time">
+          0:00
+        </div>
+        <!--End of music start time-->
+        <!--Music end time-->
+        <div id="end-time">
+          5:04
+        </div>
+        <!--End of music end time-->
+        <!--Begining of the progress bar-->
+        <div id="progress-bar">
+          <div id="circle">
+            <i class="fas fa-circle"></i>
+          </div>
+        </div>
+        <!--End of progress bar-->
+        <!--Miscellaneous icons-->
+        <div id="queue">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div id="volume">
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div id="progress-bar-volume">
+          <div id="circle-volume">
+            <i class="fas fa-circle"></i>
+          </div>
+        </div>
+        <!--End of miscellaneous icons-->
+      </div>
+      <!--End of music bar-->
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

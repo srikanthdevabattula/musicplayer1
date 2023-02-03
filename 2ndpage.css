@@ -1,0 +1,243 @@
+body {
+  background-color: #070130;
+}
+.nav-bar-logo {
+  position: relative;
+  width: 50px;
+  min-height: 45px;
+  max-height: 50px;
+  border-radius: 20%;
+  margin-left: 14px;
+}
+
+.nav-bar-profile {
+  position: relative;
+  width: 50px;
+  min-height: 45px;
+  max-height: 50px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.nav-bar-notify {
+  position: relative;
+  width: 50px;
+  min-height: 45px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.nav-bar-profile:hover {
+  box-shadow: 0px 0px 4px 4px gray;
+}
+
+.profile {
+  background-color: black;
+  border-radius: 50% !important;
+  border-color: black !important;
+  width: 5% !important;
+  margin-left: 2px;
+  margin-right: 5%;
+}
+.profile:hover {
+  background-color: black;
+  border-width: 0px;
+  border-color: black !important;
+}
+
+.notify {
+  color: gray !important;
+}
+
+.notify:hover {
+  color: #c6aae6 !important;
+}
+
+.search {
+  color: #af74f2;
+  border-color: #c6aae6;
+}
+
+.search:hover {
+  background-color: #c6aae6;
+  color: black;
+  border-color: white;
+}
+.search:active {
+  background-color: #c6aae6 !important;
+  color: black;
+  border-color: white !important;
+}
+
+.search:visited {
+  background-color: #c6aae6 !important;
+  color: black;
+  border-color: white !important;
+}
+.search-bar {
+  min-width: 30px;
+  max-width: 120px;
+}
+
+.fav-section {
+  max-width: 60px;
+  min-width: 30px;
+}
+nav {
+  height: 8%;
+  background-color: black !important;
+}
+
+/* main  */
+
+main {
+  display: inline-block;
+  width: 70%;
+  background-color: #070130;
+  /* padding: ; */
+}
+
+.artist-card {
+  height: 60vh;
+  width: 85%;
+  margin-top: 15%;
+  margin-left: 5%;
+  background-color: #0d0065;
+  /* margin-top: -5% !important; */
+  top: -11%;
+  display: flex;
+  flex-direction: row;
+}
+.artist-card img {
+  height: 100%;
+  width: 40%;
+}
+.singer-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* font-family: roboto !important; */
+}
+
+.pop-artist {
+  font-size: 20px;
+}
+.followers {
+  font-size: 13px;
+  margin-left: 20%;
+}
+.about {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: justify;
+}
+.play-now {
+  height: 8%;
+  width: 100px;
+  font-size: 15px;
+  background: linear-gradient(red, orange 150% 50%);
+}
+.follow {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.tracks {
+  font-size: small;
+}
+.songs {
+  height: 10vh;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 25px 20px 10px 55px;
+  background-color: #222b5c;
+}
+.n-play {
+  background-color: #302e3b;
+}
+.song-image {
+  height: 80%;
+  width: 13%;
+  margin: auto 4px auto 4px;
+}
+.s-no {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: monospace;
+}
+.song-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.song-singer {
+  font-weight: 200;
+  font-family: Verdana;
+  font-size: 12px;
+}
+.adding {
+  margin-left: 35vw;
+}
+
+aside {
+  display: inline-flex;
+  width: 25%;
+  background-color: #070130;
+  vertical-align: top;
+  margin-top: 10%;
+  color: white;
+}
+.similar {
+  margin-left: 20px;
+}
+.view-all {
+  margin-left: 7vw;
+  font-size: small;
+  font-weight: bold;
+}
+
+.artists-container {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.artists-img {
+  height: 80%;
+  width: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.s-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.s-name span {
+  font-weight: 300;
+}
+
+@keyframes disk {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.disk {
+  color: aqua;
+  animation: disk 0.3s ease-in-out infinite;
+}
